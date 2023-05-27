@@ -2,120 +2,199 @@
 <html>
 <head>
 	<title>Trang web của tôi</title>
+	
 	<style>
-		/* CSS cho phần body */
-		body {
-			color: #011a14;
-			font-size: 18px;
-		}
+		body{
+	padding:0px; 
+  margin: 0px;
+  text-align: center;
+  font-family: Courier New;
+  color: rgb(19, 16, 16);
+  background-color: beige;
+  font-size: larger;
+}
 
-		/* CSS cho phần container */
-		.container {
-			background-color: #c5aab5;
-			margin-top: -19px;
-			margin-bottom: -19px;
-		}
+/* Global */
+.container{
+  margin: 50px;
 
-		/* CSS cho phần danh sách chưa sắp xếp */
-		ul {
-			color: rgb(7, 27, 31);
-		}
+}
+h1{
+  font-size: 45px;
+}
 
-        /* CSS cho phần header */
-		header {
-			background-image: url('https://xaydungnhaquangngai.com/wp-content/uploads/2020/10/interior-bright-living-room-with-pillows-sofa-armchair-plants-lamp-empty-blue-wall-background_41470-708.jpg');
-			background-size: cover;
-			background-position: center;
-			color: black;
-			padding-top: 300px;
-			min-height: 70px;
-			text-align: center;
-			margin: auto;
-			width: 100%;
-			background-repeat: no-repeat;
-			 
-		}
 
-		/* CSS cho các liên kết trong phần header */
-		header a {
-			color: #af2121;
-			text-decoration: none;
-		}
+ul{
+  list-style: none;
 
-		/* CSS cho các mục danh sách trong phần header */
-		header li {
-			display: inline-block;
-			background-color:rgb(210, 225, 238);
-			padding: 8px 80px;
-		}
+}
 
-		/* CSS cho các mục trong phần danh sách chính có class "highlight" hoặc các liên kết đang được truy cập */
-		header .highlight, header .current a {
-			background-color: rgb(174, 134, 226);
-		}
+.button_1{
+  height: 28px;
+  background-color: rgb(116, 175, 252);
 
-		/* CSS cho liên kết trong phần header khi rê chuột vào */
-		header a:hover {
-			background-color: rgb(177, 219, 97);
-		}
+}
 
-		/* CSS cho phần header có id="branding" */
-		header #branding {
-			background-color: rgb(182, 124, 49);
-			float: left;
-		}
+.dark{
+  background-color: rgb(108, 196, 37);
+    padding: 30px;
 
-		/* CSS cho tiêu đề h1 trong phần header */
-		header #branding h1 {
-			/* background-color: rgb(95, 197, 245); */
-			margin: 0;
-			margin-top: -150px;
-			text-align: center;
-		}
+}
 
-		/* CSS cho phần danh sách liên kết chính trong phần header */
-		header nav {
-			background-color: rgb(210, 225, 238);
-			float: center;
-			margin-bottom: 20px;
-			margin-top: 20px;
-		}
+/* Header **/
+header{
 
-		/* CSS cho phần footer */
-		footer {
-			background-color: rgb(193, 196, 62);
-			color: #1a0f0f;
-			text-align: center;
-			padding: 20px;
-			margin-top: 50px;
-			margin-bottom: -24px;
-		}   
-		     
-        /* CSS cho phần Showcase */
-        #showcase{
-            min-height: 1000px;
-            background: #f2f2f2;
-            text-align: center;
-            padding-top: 200px;
-        }
-		
-        /* CSS cho tiêu đề h1 trong phần Showcase */
-        #showcase h1{
-            font-size: 80px;
-            margin-top: 0;
-			text-align: center;
-			
-        }
+    width: 100%;
+    background-color: rgb(196, 255, 240);
+    display: inline-block;
+    border-bottom: 3px solid  rgb(202, 152, 202);
+	background-image: url('https://xaydungnhaquangngai.com/wp-content/uploads/2020/10/interior-bright-living-room-with-pillows-sofa-armchair-plants-lamp-empty-blue-wall-background_41470-708.jpg');
+}
 
-        /* CSS cho phần Showcase */
-        #showcase p{
-            font-size: 24px;
-        }
-		#phanchan{
-			text-align: center;
-			font-size: 24px;
-			color :rgb(110, 47, 18)
-		}
+header a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(3, 22, 19);
+
+}
+
+header li{
+  display: inline-block;
+    margin: 0 10px;
+}
+
+header #branding{
+  margin-left: 50px;
+}
+
+header #branding h1{
+  display: inline-block;
+  line-height: 50px;
+  color: rgb(3, 22, 19);
+
+}
+
+header nav{
+  float: right;
+  margin-top: -70px;
+  margin-right: 50px;
+
+}
+
+header .highlight, header .current a{
+  color: blue;
+
+}
+
+header a:hover{
+  background-color: rgb(33, 34, 6);
+  color: rgb(13, 210, 245);
+}
+
+/* Showcase */
+#showcase{
+  background-position: center;
+  padding: 10px;
+
+}
+
+#showcase h1{
+  font-size: 50px;
+    text-align:center;
+    font-style:oblique;
+    
+    color:rgb(32, 156, 32);
+
+}
+
+#showcase p{
+  font-style:oblique;
+  font-size: 30px;
+  text-align:center;
+  color: rgb(189, 218, 131);
+
+}
+
+/* Newsletter */
+#newsletter{
+  background-color: rgb(173, 228, 86);
+
+  padding-top: 10px;
+
+}
+
+#newsletter h1{
+  font-family:Comic Sans MS;
+  margin-top:-30px;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: -50px;
+  margin-right: 150px;
+
+}
+
+#newsletter input[type="email"]{
+  border: 2px solid  rgb(134, 184, 231);
+  height: 24px;
+  width: 300px;
+
+}
+
+/* Boxes */
+#boxes{
+  text-align: center;
+  
+
+}
+
+#boxes .box{
+  display: inline-block;
+    width: 20%;
+    margin: 0 60px;
+}
+
+#boxes .box img{
+  width: 300px;    
+  
+}
+
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width: 400px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 100%;
+  
+}
+
+/* Main-col */
+article#main-col{
+  display: inline-block;
+  width: 600px;
+}
+
+/* Services */
+ul#services li{
+  background-color:rgb(117, 117, 31);
+  color: rgb(105, 196, 63);
+  margin: 3px 0px;
+  border: 2px solid  rgb(7, 5, 7);
+}
+
+footer{
+  background-color: rgb(79, 155, 218);
+  text-align: center;/* padding-left: 500px; */
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+
 	</style>
 </head>
 <body>
@@ -134,13 +213,18 @@
 			</nav>
 		</div>
 	</header>
-    <section id="main">
+	<section id="newsletter">
 		<div class="container">
 			<article>
 				
 				<h2> Đăng ký để nhận thông báo mới từ chúng tôi </h2>
+                <form>
 				<input type="text" placeholder="Nhập Email..."="30"><br> 
-   <button>Đăng ký</button>
+                <button type="submit" class="button_1">Đăng ký</button>
+	        </form>
+            </article>
+        </section>
+        </div>
    <h3> Các dịch vụ</h3>
    <ul>
 	   <li><h4> Thiết kế Website<h4></li>
@@ -155,13 +239,12 @@
 	   <img src="https://bizflyportal.mediacdn.vn/bizflyportal/1157/2428/2021/02/17/01/48/bao16134797296581.jpg">
    
 	   <h4>MỤC ĐÍCH BẠN THIẾT KẾ WEBSITE?<h4>
-	   <ul>
-							   
-							   <li>Giới thiệu về công ty, dịch vụ, sản phẩm?</li>
-							   <li>Tìm kiếm thêm khách hàng tiềm năng?</li>
-							   <li>Hay để xây dựng thương hiệu?</li>
-							   
-  </ul>
+	 
+				<ul>			   
+							   <p>Giới thiệu về công ty, dịch vụ, sản phẩm?</p>
+							   <p>Tìm kiếm thêm khách hàng tiềm năng?</p>
+							   <p>Hay để xây dựng thương hiệu?</p>
+ </ul>
 <div id="phanchan">
 	<p>Hãy đến với chúng tôi nhanh nhất khi bạn có thể chúng tôi sẽ hỗ trợ bạn mọi thứ .</p>
 	<p>Hãy nhanh tay lên nào số lượng có hạn nha!!!</p>
